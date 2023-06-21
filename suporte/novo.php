@@ -13,5 +13,5 @@ include "../includes/menu.php";
     <button type="submit">Salvar</button>
 </form>
 <?php
-include "../includes/rodape.php"
+include "../includes/rodape.php";
 ?>
