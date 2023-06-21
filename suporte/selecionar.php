@@ -32,9 +32,17 @@ include "../includes/conexao.php";
             <td><?php echo $um_ticket['assunto'] ?></td>
             <td><?php echo $um_ticket['descricao'] ?></td>
             <td width="15%">
-                <a href="../suporte/vizualizar.php" title="vizualizar" class="ms-5"><img src="../img/vizualizar.png" width="30"></a>
-                <a href="../suporte/editar.php" title="editar" class="ms-3"><img src="../img/editar.png" width="30"></a>
-                <a href="../suporte/excluir.php" title="excluir" class="ms-3" ><img src="../img/excluir.png"  width="30"></a>
+                <a href="../suporte/vizualizar.php" title="vizualizar" class="ms-5">
+                    <img src="../img/vizualizar.png" width="30">
+                </a>
+
+                <a href="../suporte/editar.php" title="editar" class="ms-3">
+                    <img src="../img/editar.png" width="30">
+                </a>
+
+                <a href="excluir.php?id=<?php echo $um_ticket['id'];?>" title="excluir" class="ms-3" >
+                <img src="../img/excluir.png"  width="30">
+            </a>
             </td>
         </tr>
 
