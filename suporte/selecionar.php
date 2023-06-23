@@ -15,7 +15,7 @@ include "../includes/conexao.php";
 <table class="table table-bordered">
     <tr class="table text-center table-secondary table-striped-columns fw-semibold">
         <td>Código</td>
-     
+
         <td>Email</td>
         <td>Assunto</td>
         <td>Descrição</td>
@@ -32,17 +32,17 @@ include "../includes/conexao.php";
             <td><?php echo $um_ticket['assunto'] ?></td>
             <td><?php echo $um_ticket['descricao'] ?></td>
             <td width="15%">
-                <a href="vizualizar.php?id=<?php echo $um_ticket['id'];?>" title="vizualizar" class="ms-5">
+                <a href="vizualizar.php?id=<?php echo $um_ticket['id']; ?>" title="vizualizar" class="ms-5">
                     <img src="../img/vizualizar.png" width="30">
                 </a>
 
-                <a href="editar.php?id=<?php echo $um_ticket['id'];?>" title="editar" class="ms-3">
+                <a href="editar.php?id=<?php echo $um_ticket['id']; ?>" title="editar" class="ms-3">
                     <img src="../img/editar.png" width="30">
                 </a>
 
-                <a href="excluir.php?id=<?php echo $um_ticket['id'];?>" title="excluir" class="ms-3" >
-                <img src="../img/excluir.png"  width="30">
-            </a>
+                <a href="excluir.php?id=<?php echo $um_ticket['id']; ?>" title="excluir" class="ms-3">
+                    <img src="../img/excluir.png" width="30">
+                </a>
             </td>
         </tr>
 
