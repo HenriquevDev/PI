@@ -7,7 +7,7 @@ include "../includes/menu.php";
 include "../includes/conexao.php";
 $id = $_GET["id"];
 $email = "";
-$sql = "select * from suporte where id = $id";
+$sql = "select * from suporte where id = '$id'";
 $todos_os_tickets = mysqli_query($conexao, $sql);
 while ($um_ticket = mysqli_fetch_assoc($todos_os_tickets)) :
     $email = $um_ticket["email"];

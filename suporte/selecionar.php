@@ -22,7 +22,7 @@ include "../includes/conexao.php";
         <td>Ações</td>
     </tr>
     <?php
-    $sql = "select* from suporte";
+    $sql = "select * from suporte";
     $todos_os_tickets = mysqli_query($conexao, $sql);
     while ($um_ticket = mysqli_fetch_assoc($todos_os_tickets)) :
     ?>
